@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work</title>
-    <link rel="stylesheet" href="css/app.min.css"
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.min.css">
 </head>
 
 <body>
@@ -306,24 +307,53 @@
 
     <div class="input">
         <div class="container">
-            <div class="input__item">
-                <div class="input__item-group">
-                    <input class="input__item-checkbox" id="id1" type="checkbox">
-                    <label class="input__checkbox-label" for="id1">Яндекс.Директ</label>
+            <div class="input__inner">
+                <div class="input__group-left">
+                    <div class="input__item">
+                        <div class="input__item-group">
+                            <input class="input__item-checkbox" id="id1" type="checkbox">
+                            <label class="input__checkbox-label" for="id1">Яндекс.Директ</label>
+                        </div>
+                        <div class="input__item-group">
+                            <input class="input__item-checkbox" id="id2" type="checkbox">
+                            <label class="input__checkbox-label" for="id2">Google AdWords</label>
+                        </div>
+                    </div>
+                    <div class="input__item">
+                        <div class="input__item-group">
+                            <input class="input__item-radio" name="radio" id="radio1" type="radio">
+                            <label class="input__radio-label" for="radio1">Яндекс.Директ</label>
+                        </div>
+                        <div class="input__item-group">
+                            <input class="input__item-radio" id="radio2" name="radio" type="radio">
+                            <label class="input__radio-label" for="radio2">Google AdWords</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="input__item-group">
-                    <input class="input__item-checkbox" id="id2" type="checkbox">
-                    <label class="input__checkbox-label" for="id2">Google AdWords</label>
-                </div>
-            </div>
-            <div class="input__item">
-                <div class="input__item-group">
-                    <input class="input__item-radio" name="radio" id="radio1" type="radio">
-                    <label class="input__radio-label" for="radio1">Яндекс.Директ</label>
-                </div>
-                <div class="input__item-group">
-                    <input class="input__item-radio" id="radio2" name="radio" type="radio">
-                    <label class="input__radio-label" for="radio2">Google AdWords</label>
+
+                <div class="input__group-right">
+                    <div class="input__group-right-inner">
+                        <div class="input__item">
+                            <div class="input__item-group">
+                                <input class="input__form-checkbox" id="id3" type="checkbox">
+                                <label class="form__checkbox-label" for="id3">Согласен с условиями <span>обработки персональных</span><br>данных</label>
+                            </div>
+                            <div class="input__item-group">
+                                <input class="input__form-checkbox" id="id4" type="checkbox">
+                                <label class="form__checkbox-label" for="id4">Согласен с условиями <span> обработки персональных<br> данных</span></label>
+                            </div>
+                        </div>
+                        <div class="input__item">
+                            <div class="input__item-group">
+                                <input class="input__item-radio-2" name="radio" id="radio3" type="radio">
+                                <label class="input__radio-label-2" for="radio3">Яндекс.Директ</label>
+                            </div>
+                            <div class="input__item-group">
+                                <input class="input__item-radio-2" id="radio4" name="radio" type="radio">
+                                <label class="input__radio-label-2" for="radio4">Google AdWords</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -436,13 +466,13 @@
             <form class="form-second">
                 <ul class="form__left">
                     <li class="form__left-item-1">
-                        <input value="Иванов Сергей" class="form-second__input-text" type="text" required>
+                        <input class="form__left-input" value="Иванов Сергей" class="form-second__input-text" type="text" required>
                     </li>
                     <li class="form__left-item-2">
-                        <input type="text" value="+7 771 224 21 21" required>
+                        <input class="form__left-input" type="text" value="+7 771 224 21 21" required>
                     </li>
                     <li class="form__left-item-3">
-                        <input type="email" value="ivanov@mail.ru" required>
+                        <input class="form__left-input" type="email" value="ivanov@mail.ru" required>
                     </li>
                 </ul>
                 <div class="form-right">
@@ -571,6 +601,40 @@
         </div>
     </div>
 
+    <div class="tabs-wrapper  tabs-wrapper-2">
+        <div class="tabs_wrap">
+            <ul class="default-tab">
+                <li class="tab-item-2">
+                    <div class="1-tab tab-2">
+                        <p>Landing Page</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="tab-ul">
+                <li class="tab-item-2">
+                    <div class="2-tab tab-2">
+                        <p>Корпоративный</p>
+                    </div>
+                </li>
+                <li class="tab-item-2">
+                    <div class="3-tab tab-2">
+                        <p>Каталог</p>
+                    </div>
+                </li>
+                <li class="tab-item-2">
+                    <div class="4-tab tab-2">
+                        <p>Интернет-магазин</p>
+                    </div>
+                </li>
+                <li class="hide-tab tab-item-2">
+                    <div class="5-tab tab-2">
+                        <p>Landing Page</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <div class="tabs-wrapper">
             <div class="tabs_wrap-2">
                 <ul class="tabs__base">
@@ -601,18 +665,68 @@
             </div>
     </div>
 
+    <div class="tabs-wrapper">
+        <div class="tabs_wrap-3">
+            <ul class="tabs__base">
+                <li class="tabs__base-item-3">
+                    <div class="tabs__base-div-3">Базовый</div>
+                </li>
+                <li class="tabs__base-item-3">
+                    <div class="tabs__base-div-3">Стандарт</div>
+                </li>
+                <li class="tabs__base-item-3">
+                    <div class="tabs__base-div-3">премиум</div>
+                </li>
+            </ul>
+            <ul class="tabs__little">
+                <li class="tabs__little-item-3">
+                    <div class="tabs__little-div-3">до 50</div>
+                </li>
+                <li class="tabs__little-item-3">
+                    <div class="tabs__little-div-3">до 100</div>
+                </li>
+                <li class="tabs__little-item-3">
+                    <div class="tabs__little-div-3">до 200</div>
+                </li>
+                <li class="tabs__little-item-3">
+                    <div class="tabs__little-div-3">до 600</div>
+                </li>
+            </ul>
+        </div>
+</div>
 
-    <div class="prompt">
+    <div class="prompt-main">
         <div class="container">
-            <div class="prompt__inner">
-                <p class="prompt__text">Средний показатель качества рекламных объявлений (CTR) - 22,24% <span class="prompt-span">?</span>
-                </p>
-                <div class="prompt__hint" id="propmtHint">
-                    <p>CTR — Сlick-through rate. Это отношение кликов по объявлению к показам. Например, если вам
-                        говорят, что CTR равен 3%, это означает, что на 100 показанных объявления приходится три клика
-                        пользователей по ним.
-                    </p>
+            <div class="prompts__inner">
+
+                <div class="prompt-2">
+                    <div class="prompt__inner">
+                        <p class="prompt__text">Средний показатель качества рекламных объявлений (CTR) - 22,24% <span
+                                class="prompt-span-2">?</span>
+                        </p>
+                        <div class="prompt__hint-2" id="propmtHint">
+                            <p>CTR — Сlick-through rate. Это отношение кликов по объявлению к показам. Например, если вам
+                                говорят, что CTR равен 3%, это означает, что на 100 показанных объявления приходится три клика
+                                пользователей по ним.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+        
+                <div class="prompt">
+                    <div class="prompt__inner">
+                        <p class="prompt__text">Средний показатель качества рекламных объявлений (CTR) - 22,24% <span
+                                class="prompt-span-1">?</span>
+                        </p>
+                        <div class="prompt__hint-1" id="propmtHint">
+                            <p>CTR — Сlick-through rate. Это отношение кликов по объявлению к показам. Например, если вам
+                                говорят, что CTR равен 3%, это означает, что на 100 показанных объявления приходится три клика
+                                пользователей по ним.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -692,7 +806,7 @@
                     <li class="dots__item"><span>2</span></li>
                     <li class="dots__item"><span>3</span></li>
                     <li class="dots__item"><span>4</span></li>
-                    <li class="dots__item"></li>
+                    <li class="dots__item dots__item-5"></li>
                     <li class="dots__item"><span>10</span></li>
                 </ul>
                 
@@ -760,6 +874,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.js"></script>
     <!-- slick.min -->
     <script src="js/libs.min.js"></script>
+    <script src="https://kit.fontawesome.com/36cd547c5f.js" crossorigin="anonymous"></script>
     <script src="js/app.min.js"></script>
 </body>
 

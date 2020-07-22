@@ -4,7 +4,7 @@ $(document).ready(function () {
     dots: true,
     responsive: [
       {
-        breakpoint: 761,
+        breakpoint: 780,
         settings: {
           arrows: false,
           dots: true,
@@ -57,35 +57,59 @@ $(document).ready(function () {
     $(this).parent().addClass("active");
   })
 
-  $('.tabs__base-div').click(function() {
+  $('.tab-2').click(function() {
+    $('.tab-item-2').removeClass('active');
+    $(this).parent().addClass("active");
+  })
+
+  $('.tabs__base-item').click(function() {
     $('.tabs__base-item').removeClass('active');
-    $(this).parent().addClass("active");
+    $(this).addClass("active");
   })
 
-  $('.tabs__little-div').click(function() {
+  $('.tabs__base-item-3').click(function() {
+    $('.tabs__base-item-3').removeClass('active');
+    $(this).addClass("active");
+  })
+
+  $('.tabs__little-item-3').click(function() {
+    $('.tabs__little-item-3').removeClass('active');
+    $(this).addClass("active");
+  })
+
+  $('.tabs__little-item').click(function() {
     $('.tabs__little-item').removeClass('active');
-    $(this).parent().addClass("active");
+    $(this).addClass("active");
   })
 
-  $('.prompt-span').click(function() {
-    let promptHint = $(".prompt__hint");
-    let promptHintActive = $("#promptHint");
-    promptHint.toggleClass('active')
-    $('.prompt-span').toggleClass('active')
-    
-    if (
-      !promptHintActive.is(e.target) && // проверка условия если клик был не по нашему блоку
-      promptHintActive.has(e.target).length === 0
-    ) {
-      // проверка условия если клик не по его дочерним элементам
-      promptHintActive.removeClass("active"); // если условия выполняются - скрываем наш элемент
-    }
+  $('.prompt-span-1').hover(function() {
+    $(".prompt__hint-1").addClass('active')
+    $('.prompt-span-1').addClass('active')
+  })   
+
+  $('.prompt-span-1').mouseleave(function() {
+    $(".prompt__hint-1").removeClass('active')
+    $('.prompt-span-1').removeClass('active')
   })
-  
 
-  // $('.questions__form-text').onFocus(function() {
-  //   if($(this) = $('.questions__form-item-2')) {
+  $('.prompt-span-2').hover(function() {
+    $(".prompt__hint-2").addClass('active')
+    $('.prompt-span-2').addClass('active')
+  })   
 
-  //   }
-  // })
+  $('.prompt-span-2').mouseleave(function() {
+    $(".prompt__hint-2").removeClass('active')
+    $('.prompt-span-2').removeClass('active')
+  })
+
+  $('.dots__item').click(function() {
+    $('.dots__item').removeClass('active');
+    $(this).addClass('active');
+  })
+
+  $('.form__left-input').focus(function() {
+    $('.form__left-input').removeClass('active')
+    $(this).parent().addClass('active')
+  })
+
 });
