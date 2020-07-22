@@ -4,7 +4,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -16,7 +18,7 @@ a {
 }
 
 ul,
-ol, 
+ol,
 li {
     list-style: none;
     margin: 0;
@@ -55,6 +57,7 @@ button {
     cursor: pointer;
     border: none;
     background-color: transparent;
+
     &:focus {
         outline: none;
     }
@@ -66,14 +69,14 @@ img {
 
 .container {
     max-width: 1060px;
-    padding:0 15px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 .container-header,
 .container-footer {
     max-width: 1700px;
-    padding:0 15px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -83,10 +86,12 @@ textarea {
 }
 
 input {
+
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
         -webkit-appearance: none;
     }
+
     &:focus {
         outline: none;
     }
@@ -99,34 +104,38 @@ input {
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+
 .title-2 {
     font-size: 42px;
     font-weight: 800;
     line-height: 50px;
     margin-bottom: 20px;
 }
+
 .title-3 {
     font-size: 36px;
     font-weight: 700;
     line-height: 44px;
     margin-bottom: 15px;
 }
+
 .title-4 {
     font-size: 28px;
     font-weight: 600;
     line-height: 36px;
     margin-bottom: 12px;
 }
+
 .title-5 {
     font-size: 22px;
     font-weight: 700;
     line-height: 30px;
     margin-bottom: 9px;
 }
+
 .title-6 {
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
     margin-bottom: 6px;
 }
-
