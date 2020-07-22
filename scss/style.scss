@@ -1160,9 +1160,11 @@
 .form__file {
     font-size: 0;
 }
+
 input[type="file"] {
     display: none;
 }
+
 .form__file-label {
     display: none;
     font-size: 0;
@@ -1170,6 +1172,7 @@ input[type="file"] {
     margin-bottom: 40px;
     display: inline-block;
 }
+
 .fa-paperclip:before {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -2163,15 +2166,18 @@ input[type="file"] {
 }
 
 @media (max-width: 760px) {
-    .table-2__inner .table1 td:first-child, .table-2__inner .table1 th:first-child,
-    .table-2__inner .table1 td, .table-2__inner .table1 th ,
+
+    .table-2__inner .table1 td:first-child,
+    .table-2__inner .table1 th:first-child,
+    .table-2__inner .table1 td,
+    .table-2__inner .table1 th,
     .table__inner .table1 td:first-child,
     .table__inner .table1 td,
     .table__inner .table1 th,
-    .table__inner .table1 th:first-child
-    {
+    .table__inner .table1 th:first-child {
         padding: 15px;
     }
+
     .tabs_wrap-3 {
         padding: 25px 10px;
     }
@@ -2660,6 +2666,7 @@ input[type="file"] {
         font-size: large;
         padding-right: 10px;
     }
+
     .form__file-label {
         font-size: 17px;
     }
@@ -2693,6 +2700,7 @@ input[type="file"] {
     .questions__form-paragraph {
         margin-left: 18px;
     }
+
     .top__img-inner:before {
         opacity: 0;
         display: none;
