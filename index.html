@@ -14,7 +14,7 @@
 
     <!-- header -->
     <header class="header">
-        <div class="container-header">
+        <div class="container">
             <div class="header__inner">
                 <div class="burger">
                     <svg class="burger__icon">
@@ -463,7 +463,7 @@
                         </div>
                         <p class="questions__form-paragraph">* — обязательные для заполнения поля</p>
                     </form>
-                    <button class="questions__button" type="submit">оставить заявку</button>
+                    <button class="buttons-3" type="submit">оставить заявку</button>
                 </div>
             </div>
         </div>
@@ -490,9 +490,15 @@
                 <div class="form-right">
                     <textarea class="form__textarea" placeholder="Сooбщение" required></textarea>
                 </div>
-
+                
             </form>
             <p class="form-second__text">Поля отмеченные звездочкой ( <span>*</span> ) , являются обязательными</p>
+                
+            <input class="form__file" type="file" id="inputFile">
+            <label class="form__file-label" for="inputFile">
+            <i class="fas fa-paperclip file-icon"></i>    
+            Прикрепить файл</label>
+
             <button class="buttons-1 type=" submit">Отправить</button>
         </div>
     </section>

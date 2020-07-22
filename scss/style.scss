@@ -876,7 +876,7 @@
 
     &__title {
         font-size: 46px;
-        font-weight: 400;
+        font-weight: 800;
         max-width: 655px;
         line-height: 52px;
         text-transform: uppercase;
@@ -925,22 +925,6 @@
                 border: 1px solid #212121;
                 outline: none;
             }
-        }
-    }
-
-    .questions__button {
-        color: #fff;
-        font-size: 15px;
-        text-transform: uppercase;
-        padding: 15px 25px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-        background-color: #dc107e;
-        transition: all .2s;
-        display: inline-block;
-
-        &:hover {
-            transform: translateY(1px);
-            background-color: #d92588;
         }
     }
 }
@@ -1066,6 +1050,7 @@
         font-size: 46px;
         max-width: 483px;
         margin: 0 auto 35px;
+        font-weight: 800;
     }
 
     &__text {
@@ -1159,31 +1144,39 @@
         }
     }
 
-    &-second__button {
-        padding: 20px 45px 17px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-        background-color: #dc107e;
-        font-size: 18px;
-        text-transform: uppercase;
-        color: #ffffff;
-        transition: all .3s;
-
-        &:hover {
-            background-color: #d92588;
-        }
-    }
-
     &-second__text {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         text-align: left;
         color: #999999;
         font-size: 14px;
+        text-align: center;
 
         span {
             color: $pink;
         }
     }
 }
+
+.form__file {
+    font-size: 0;
+}
+input[type="file"] {
+    display: none;
+}
+.form__file-label {
+    display: none;
+    font-size: 0;
+    color: #343037;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+.fa-paperclip:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 0;
+    color: #343037;
+}
+
 
 .select_wrap {
     max-width: 280px;
@@ -1322,7 +1315,6 @@
     &__wrapper {
 
         display: flex;
-        justify-content: space-between;
     }
 
     &__inner {
@@ -1337,6 +1329,7 @@
     &__right {
         background-color: #e6eef8;
         max-width: 480px;
+        margin-right: 30px;
     }
 
     &__wrong {
@@ -1743,7 +1736,7 @@
 }
 
 .table-2 {
-    background-image: url(../images/dest/table-1-bg.png);
+    background-image: url(../images/src/table-1-bg.png);
     max-width: 1360px;
     margin: 0 auto;
 
@@ -1860,6 +1853,7 @@
         height: 50px;
         border-radius: 50%;
         transition: .3s;
+        opacity: .5;
 
         span {
             position: absolute;
@@ -1895,6 +1889,7 @@
 
     &__item.active {
         background-color: $pagination;
+        opacity: 1;
     }
 
     &__item.active:after {
@@ -2168,6 +2163,15 @@
 }
 
 @media (max-width: 760px) {
+    .table-2__inner .table1 td:first-child, .table-2__inner .table1 th:first-child,
+    .table-2__inner .table1 td, .table-2__inner .table1 th ,
+    .table__inner .table1 td:first-child,
+    .table__inner .table1 td,
+    .table__inner .table1 th,
+    .table__inner .table1 th:first-child
+    {
+        padding: 15px;
+    }
     .tabs_wrap-3 {
         padding: 25px 10px;
     }
@@ -2426,6 +2430,7 @@
     .input__item {
         display: flex;
         max-width: 100%;
+        text-align: start;
     }
 
     .form .form__left {
@@ -2457,6 +2462,7 @@
 
     .input__group-right {
         max-width: 100%;
+        max-height: 145px;
     }
 
     .tabs__base-item,
@@ -2650,6 +2656,13 @@
 }
 
 @media (max-width: 430px) {
+    .fa-paperclip:before {
+        font-size: large;
+        padding-right: 10px;
+    }
+    .form__file-label {
+        font-size: 17px;
+    }
 
     .slick-slider .slick-list {
         max-height: 115px;
@@ -2679,6 +2692,10 @@
 
     .questions__form-paragraph {
         margin-left: 18px;
+    }
+    .top__img-inner:before {
+        opacity: 0;
+        display: none;
     }
 }
 
