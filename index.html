@@ -10,7 +10,7 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
@@ -37,7 +37,7 @@
     </header>
     <!-- header -->
 
-    <div class="sidebar" id="sidebar">
+    <sidebar class="sidebar" id="sidebar">
       <div class="sidebar__inner">
         <a class="sidebar-link" href="#">
           <svg class="sidebar__logo">
@@ -104,7 +104,7 @@
           <span>Showreel 2018</span>
         </a>
       </div>
-    </div>
+    </sidebar>
     <!-- ../sidebar -->
 
     <section class="top__img-section">
@@ -610,25 +610,25 @@
           <div class="form__wrapper">
             <form class="questions__form">
               <ul class="questions__form-list">
-                <li class="questions__form-item-1">
+                <li class="questions__form-item name">
                   <input
                     class="form-item questions__form-text"
                     type="text"
-                    value="Иванов Сергей"
+                    placeholder="Иванов Сергей"
                   />
                 </li>
-                <li class="questions__form-item-2">
+                <li class="questions__form-item tel">
                   <input
                     class="form-item questions__form-number"
-                    value="+7 771 224 21 21"
+                    placeholder="+7 771 224 21 21"
                     required
                   />
                 </li>
-                <li class="questions__form-item-3">
+                <li class="questions__form-item mail">
                   <input
                     class="form-item questions__form-email"
                     type="email"
-                    value="ivanov@mail.ru"
+                    placeholder="ivanov@mail.ru"
                     required
                   />
                 </li>
@@ -659,27 +659,27 @@
         <p class="form__text">продумаем и сделаем!</p>
         <form class="form-second">
           <ul class="form__left">
-            <li class="form__left-item-1">
+            <li class="form__left-item-1 form__left-item">
               <input
                 class="form__left-input form-second__input-text"
-                value="Иванов Сергей"
+                placeholder="Иванов Сергей"
                 type="text"
                 required
               />
             </li>
-            <li class="form__left-item-2">
+            <li class="form__left-item-2 form__left-item">
               <input
                 class="form__left-input"
                 type="text"
-                value="+7 771 224 21 21"
+                placeholder="+7 771 224 21 21"
                 required
               />
             </li>
-            <li class="form__left-item-3">
+            <li class="form__left-item-3 form__left-item">
               <input
                 class="form__left-input"
                 type="email"
-                value="ivanov@mail.ru"
+                placeholder="ivanov@mail.ru"
                 required
               />
             </li>
@@ -806,30 +806,30 @@
       <div class="tabs_wrap">
         <ul class="default-tab">
           <li class="tab-item">
-            <div class="1-tab tab">
-              <p>Landing Page</p>
+            <div class="first-tab tab">
+            Landing Page
             </div>
           </li>
         </ul>
         <ul class="tab-ul">
           <li class="tab-item">
             <div class="2-tab tab">
-              <p>Корпоративный</p>
+            Корпоративный
             </div>
           </li>
           <li class="tab-item">
             <div class="3-tab tab">
-              <p>Каталог</p>
+            Каталог
             </div>
           </li>
           <li class="tab-item">
             <div class="4-tab tab">
-              <p>Интернет-магазин</p>
+            Интернет-магазин
             </div>
           </li>
           <li class="hide-tab tab-item">
             <div class="5-tab tab">
-              <p>Landing Page</p>
+            Landing Page
             </div>
           </li>
         </ul>
@@ -840,7 +840,7 @@
       <div class="tabs_wrap">
         <ul class="default-tab">
           <li class="tab-item-2">
-            <div class="1-tab tab-2">
+            <div class="first-tab tab-2">
               <p>Landing Page</p>
             </div>
           </li>
@@ -885,16 +885,16 @@
         </ul>
         <ul class="tabs__little">
           <li class="tabs__little-item">
-            <div class="tabs__little-div">до 50</div>
+            <div class="tabs__little-div tabs__base-div">до 50</div>
           </li>
           <li class="tabs__little-item">
-            <div class="tabs__little-div">до 100</div>
+            <div class="tabs__little-div tabs__base-div">до 100</div>
           </li>
           <li class="tabs__little-item">
-            <div class="tabs__little-div">до 200</div>
+            <div class="tabs__little-div tabs__base-div">до 200</div>
           </li>
           <li class="tabs__little-item">
-            <div class="tabs__little-div">до 600</div>
+            <div class="tabs__little-div tabs__base-div">до 600</div>
           </li>
         </ul>
       </div>
@@ -904,27 +904,27 @@
       <div class="tabs_wrap-3">
         <ul class="tabs__base">
           <li class="tabs__base-item-3">
-            <div class="tabs__base-div-3">Базовый</div>
+            <div class="tabs__base-div-3 tabs__base-div">Базовый</div>
           </li>
           <li class="tabs__base-item-3">
-            <div class="tabs__base-div-3">Стандарт</div>
+            <div class="tabs__base-div-3 tabs__base-div">Стандарт</div>
           </li>
           <li class="tabs__base-item-3">
-            <div class="tabs__base-div-3">премиум</div>
+            <div class="tabs__base-div-3 tabs__base-div">премиум</div>
           </li>
         </ul>
         <ul class="tabs__little">
           <li class="tabs__little-item-3">
-            <div class="tabs__little-div-3">до 50</div>
+            <div class="tabs__little-div tabs__base-div-3">до 50</div>
           </li>
           <li class="tabs__little-item-3">
-            <div class="tabs__little-div-3">до 100</div>
+            <div class="tabs__little-div tabs__base-div-3">до 100</div>
           </li>
           <li class="tabs__little-item-3">
-            <div class="tabs__little-div-3">до 200</div>
+            <div class="tabs__little-div tabs__base-div-3">до 200</div>
           </li>
           <li class="tabs__little-item-3">
-            <div class="tabs__little-div-3">до 600</div>
+            <div class="tabs__little-div tabs__base-div-3">до 600</div>
           </li>
         </ul>
       </div>

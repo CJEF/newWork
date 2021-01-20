@@ -10,14 +10,14 @@ $(document).ready(function () {
           dots: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-        }
-      }
-    ]
+        },
+      },
+    ],
   });
 
   $(".accordion__title").on("click", function () {
     if ($(this).parent().hasClass("accordion__item--active")) {
-        $(this).parent().removeClass("accordion__item--active");
+      $(this).parent().removeClass("accordion__item--active");
     } else {
       $(".accordion__item").removeClass("accordion__item--active");
       $(this).parent().addClass("accordion__item--active");
@@ -52,64 +52,98 @@ $(document).ready(function () {
     $(this).parents(".select_wrap").removeClass("active");
   });
 
-  $('.tab').click(function() {
-    $('.tab-item').removeClass('active');
+  $(".tab").click(function () {
+    $(".tab-item").removeClass("active");
     $(this).parent().addClass("active");
-  })
+  });
 
-  $('.tab-2').click(function() {
-    $('.tab-item-2').removeClass('active');
+  $(".tab-2").click(function () {
+    $(".tab-item-2").removeClass("active");
     $(this).parent().addClass("active");
-  })
+  });
 
-  $('.tabs__base-item').click(function() {
-    $('.tabs__base-item').removeClass('active');
+  $(".tabs__base-item").click(function () {
+    $(".tabs__base-item").removeClass("active");
     $(this).addClass("active");
-  })
+  });
 
-  $('.tabs__base-item-3').click(function() {
-    $('.tabs__base-item-3').removeClass('active');
+  $(".tabs__base-item-3").click(function () {
+    $(".tabs__base-item-3").removeClass("active");
     $(this).addClass("active");
-  })
+  });
 
-  $('.tabs__little-item-3').click(function() {
-    $('.tabs__little-item-3').removeClass('active');
+  $(".tabs__little-item-3").click(function () {
+    $(".tabs__little-item-3").removeClass("active");
     $(this).addClass("active");
-  })
+  });
 
-  $('.tabs__little-item').click(function() {
-    $('.tabs__little-item').removeClass('active');
+  $(".tabs__little-item").click(function () {
+    $(".tabs__little-item").removeClass("active");
     $(this).addClass("active");
-  })
+  });
 
-  $('.prompt-span-1').hover(function() {
-    $(".prompt__hint-1").addClass('active')
-    $('.prompt-span-1').addClass('active')
-  })   
+  $(".prompt-span-1").hover(function () {
+    $(".prompt__hint-1").addClass("active");
+    $(".prompt-span-1").addClass("active");
+  });
 
-  $('.prompt-span-1').mouseleave(function() {
-    $(".prompt__hint-1").removeClass('active')
-    $('.prompt-span-1').removeClass('active')
-  })
+  $(".prompt-span-1").mouseleave(function () {
+    $(".prompt__hint-1").removeClass("active");
+    $(".prompt-span-1").removeClass("active");
+  });
 
-  $('.prompt-span-2').hover(function() {
-    $(".prompt__hint-2").addClass('active')
-    $('.prompt-span-2').addClass('active')
-  })   
+  $(".prompt-span-2").hover(function () {
+    $(".prompt__hint-2").addClass("active");
+    $(".prompt-span-2").addClass("active");
+  });
 
-  $('.prompt-span-2').mouseleave(function() {
-    $(".prompt__hint-2").removeClass('active')
-    $('.prompt-span-2').removeClass('active')
-  })
+  $(".prompt-span-2").mouseleave(function () {
+    $(".prompt__hint-2").removeClass("active");
+    $(".prompt-span-2").removeClass("active");
+  });
 
-  $('.dots__item').click(function() {
-    $('.dots__item').removeClass('active');
-    $(this).addClass('active');
-  })
+  $(".dots__item").click(function () {
+    $(".dots__item").removeClass("active");
+    $(this).addClass("active");
+  });
 
-  $('.form__left-input').focus(function() {
-    $('.form__left-input').removeClass('active')
-    $(this).parent().addClass('active')
-  })
+  $(".form__left-input").focus(function () {
+    $(".form__left-input").removeClass("active");
+    $(this).parent().addClass("active");
+  });
+
+  $(".form-item").focus(function () {
+    $(this).parent().addClass("questions__form-item_active");
+  });
+
+  $(".form-item").blur(function () {
+    $(this).parent().removeClass("questions__form-item_active");
+  });
+
+  $(".form__left-input").focus(function () {
+    $(this).parent().addClass("form__left-input_active");
+  });
+
+  $(".form__left-input").blur(function () {
+    $(this).parent().removeClass("form__left-input_active");
+  });
+
+  $(".first-tab").click(function() {
+    if($(window).width() < 761) {
+      $(this).toggleClass('close-select')
+      $('.tab-ul').toggleClass('tab-ul--active')
+      $('.tab-item').on('click', function() {
+        console.log($(this.children().text())
+      })
+    } else {
+      
+    }
+  
+  });
+
+  
+
+
+
 
 });
