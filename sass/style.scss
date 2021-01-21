@@ -1322,11 +1322,19 @@ input[type="file"] {
   }
 }
 
+.tabs__base-downside {
+  margin-bottom: 20px;
+}
+
 .tabs-wrapper {
   text-align: center;
   margin: 50px auto;
   font-size: 17px;
   color: $gray;
+
+  .hidden-tab {
+    display: none;
+  }
 
   .tab-item,
   .tab-item-2 {
@@ -1382,6 +1390,8 @@ input[type="file"] {
   }
 
   .tab-ul {
+    width: 75%;
+    justify-content: space-around;
     display: flex;
     padding: 1.9px 1.9px 1.9px 0;
   }
@@ -1396,7 +1406,7 @@ input[type="file"] {
   }
 
   .default-tab {
-    width: 100%;
+    width: 25%;
     padding: 1.9px 0 1.9px 1.9px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1416,6 +1426,8 @@ input[type="file"] {
     color: #fff;
   }
 }
+
+
 
 .tabs-wrapper-2 {
   background-image: $pink-gradient;
@@ -1445,6 +1457,8 @@ input[type="file"] {
 
 .tabs__base {
   display: flex;
+  
+
 
   &-item,
   &-item-3 {
@@ -1493,6 +1507,10 @@ input[type="file"] {
     transition: all 0.2s;
   }
 
+  &-item-3:first-child {
+    min-width: 93.5px;
+  }
+
   &-div {
     &:hover {
       background-color: $pink;
@@ -1506,9 +1524,18 @@ input[type="file"] {
   }
 }
 
+.tabs__base-div--hidden {
+  display: none;
+}
+
 .tabs_wrap-3 {
   padding: 25px 60px;
   background-image: $pink-gradient;
+
+  .tabs__little-div:hover {
+    background-color: white;
+    color: $pink;
+  }
 
   .tabs__base-item-3,
   .tabs__little-item-3 {
@@ -1526,6 +1553,7 @@ input[type="file"] {
     background-color: rgba($color: #f7edf2, $alpha: 9);
     color: $pink;
   }
+
 }
 
 .tabs__base-item,
@@ -1982,14 +2010,8 @@ input[type="file"] {
 
   .tabs_wrap-3 {
     flex-direction: column;
-  }
+  } 
 
-  .tabs__base {
-    margin-bottom: 20px;
-  }
-
-  .tabs__base-item {
-  }
 
   .tabs__base-div {
     text-overflow: ellipsis;
@@ -2021,6 +2043,7 @@ input[type="file"] {
 
   .tabs-wrapper .tabs_wrap {
     max-width: 880px;
+    margin: 0 auto;
   }
 
   .tabs-wrapper .tab-item {
@@ -2067,6 +2090,8 @@ input[type="file"] {
 
   .prompt-2 {
     margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
   }
 
   .iphone {
@@ -2078,12 +2103,8 @@ input[type="file"] {
     padding: 0;
   }
 
-  .tabs__base {
-    margin-bottom: 20px;
-  }
-
   .tabs-wrapper .tabs_wrap {
-    margin: 0;
+    margin: 0 auto;
   }
 
   .tabs-wrapper {
@@ -2238,10 +2259,7 @@ input[type="file"] {
     margin-bottom: 20px;
   }
 
-  .instagram__gallery-item:first-child,
-  .instagram__gallery-item:nth-child(5) {
-    display: none;
-  }
+  
 
   .form-second,
   .lists__inner,
@@ -2249,7 +2267,6 @@ input[type="file"] {
   .tabs-wrapper .tabs_wrap,
   .alerts__wrapper,
   .tabs__base,
-  .tabs__little,
   .input__item,
   .links__inner {
     flex-direction: column;
@@ -2464,6 +2481,66 @@ input[type="file"] {
     max-height: 145px;
   }
 
+  .tabs__base-downside {
+    display: none;
+  }
+
+  .tabs__base-div--hidden {
+    display: flex;
+  }
+
+  .tabs__little {
+    margin-top: 20px;
+  }
+
+  .tabs_wrap-2 .tabs__base-item {
+    background-color: $pink;
+    color: white;
+    position: relative;
+    padding: 13px 32px 14px;
+  }
+
+  .tabs__base-item:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-image: url(../images/src/select-burger-open.svg);
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 13px;
+  }
+
+  .tabs_wrap-3 .tabs__base{
+    background-color: #fff;
+  }
+
+  .tabs__base-item-3 {
+    padding: 14px 32px 14px;
+    position: relative;
+  }
+
+  .tabs_wrap-3 .tab__base-downside {
+    display: none;
+  }
+
+  .tabs__base-item-3 {
+    color: $pink;
+    position: relative;
+  }
+
+  .tabs__base-div-3:after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 14px;
+    background-image: url(../images/src/select-close-pink.png);
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 13px;
+  }
+
+
   .tabs__base-item,
   .tabs__base-item-3 {
     margin-bottom: 2px;
@@ -2476,6 +2553,7 @@ input[type="file"] {
 
   .tabs-wrapper .tabs_wrap {
     border: none;
+    min-width: 100%;
   }
 
   .tabs-wrapper .tab-ul {
@@ -2510,7 +2588,7 @@ input[type="file"] {
   .first-tab:after {
     content: '';
     position: absolute;
-    top: 25px;
+    top: 16px;
     right: 20px;
     background-image: url('../images/src/select-burger-open.svg');
     background-repeat: no-repeat;
@@ -2521,10 +2599,68 @@ input[type="file"] {
       background-image: url('../images/src/select-close-button.png');
   }
   .tabs-wrapper .tab {
-    padding: 19px 27px 15px;
+    padding: 12px 32px 12px;
   }
-  .tabs-wrapper-2 {
-      display: none;
+  .first-tab.tab-2 {
+    padding: 10px 32px 10px;
+  }
+  .tabs-wrapper-2 .tab-2:hover {
+    background-color: $pink;
+    color: white;
+  }
+  .tabs-wrapper-2 .default-tab{
+    border: 2px solid white;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  .tabs-wrapper-2 .default-tab .first-tab {
+    background-color: transparent;
+    border-radius: 0;
+  }
+  .tabs-wrapper .hidden-tab {
+    display: block;
+  }
+  .tabs-wrapper .default-tab {
+    width: 100%;
+  }
+  .tabs-wrapper .tab-ul {
+    width: 100%;
+  }
+  .alerts__right, .alerts__wrong {
+    max-width: 100%;
+  }
+  .buttons__inner .buttons-1,
+  .buttons__inner .buttons-2,
+  .buttons__inner .buttons-3,
+  .buttons__inner .buttons-4,
+  .buttons__inner .buttons-5, 
+  .buttons__inner .buttons-6 {
+    width: 100%;
+  }
+  .marks__inner {
+    width: 100%;
+  }
+  .marks-1,
+  .marks-2,
+  .marks-3 {
+    width: 100%;
+  }
+  .form__inner .buttons-1 {
+    max-width: 250px;
+  }
+  .form__wrapper .buttons-3 {
+    max-width: 250px;
+  }
+  .lists__bullet, .lists__numbered {
+    margin-right: 0;
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 560px) {
+  .instagram__gallery-item:first-child,
+  .instagram__gallery-item:nth-child(5) {
+    display: none;
   }
 }
 
@@ -2687,6 +2823,8 @@ input[type="file"] {
   .header__inner {
     padding: 20px 0 22px 0;
   }
+
+  
 }
 
 @media (max-width: 430px) {
@@ -2732,6 +2870,10 @@ input[type="file"] {
   .top__img-inner:before {
     opacity: 0;
     display: none;
+  }
+
+  .tabs__little {
+    flex-direction: column;
   }
 }
 
