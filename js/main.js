@@ -165,4 +165,22 @@ $(document).ready(function () {
       $(".first-tab-js-2").removeClass("close-select");
     }
   });
+
+  $(".tab-js-3").on("click", function () {
+    if ($(window).width() < 761) {
+      // console.log($(this).text());
+      $(".first-tab-js-3").text($(this).text());
+      $(".tab-ul-js-3").removeClass("tab-ul--active");
+      $(".first-tab-js-3").removeClass("close-select");
+    }
+  });
+
+  $(".tab-js-4").on("click", function () {
+    if ($(window).width() < 761) {
+      // console.log($(this).text());
+      $(".first-tab-js-4").text($(this).text());
+      $(".tab-ul-js-4").removeClass("tab-ul--active");
+      $(".first-tab-js-4").removeClass("close-select");
+    }
+  });
 });

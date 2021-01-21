@@ -471,7 +471,6 @@
 
   &-1,
   &-2,
-  &-3,
   &-4 {
     font-size: 18px;
   }
@@ -1323,7 +1322,11 @@ input[type="file"] {
 }
 
 .tabs__base-downside {
-  margin-bottom: 20px;
+  display: flex;
+}
+
+.tab__base-downside {
+  display: flex;
 }
 
 .tabs-wrapper {
@@ -1426,9 +1429,6 @@ input[type="file"] {
     color: #fff;
   }
 }
-
-
-
 .tabs-wrapper-2 {
   background-image: $pink-gradient;
   padding: 50px 80px 40px 80px;
@@ -1457,8 +1457,6 @@ input[type="file"] {
 
 .tabs__base {
   display: flex;
-  
-
 
   &-item,
   &-item-3 {
@@ -1553,7 +1551,6 @@ input[type="file"] {
     background-color: rgba($color: #f7edf2, $alpha: 9);
     color: $pink;
   }
-
 }
 
 .tabs__base-item,
@@ -1570,7 +1567,7 @@ input[type="file"] {
 
 .prompt {
   padding: 25px 100px 25px;
-  min-height: 350px;
+  min-height: 360px;
 
   &__inner {
     text-align: center;
@@ -1625,7 +1622,7 @@ input[type="file"] {
 .prompt-2 {
   max-width: 500px;
   padding: 25px 100px 25px;
-  min-height: 350px;
+  min-height: 360px;
   color: #fff;
   background-image: $pink-gradient;
 
@@ -2008,10 +2005,10 @@ input[type="file"] {
     min-width: 300px;
   }
 
-  .tabs_wrap-3 {
+  .tabs_wrap-3,
+  .tabs_wrap-2 {
     flex-direction: column;
-  } 
-
+  }
 
   .tabs__base-div {
     text-overflow: ellipsis;
@@ -2068,6 +2065,10 @@ input[type="file"] {
   .slick-slider .slick-list {
     max-height: 330px;
   }
+
+  .tabs__little {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2098,16 +2099,11 @@ input[type="file"] {
     display: none;
   }
 
-  .tabs_wrap-2 {
-    flex-direction: column;
-    padding: 0;
-  }
-
   .tabs-wrapper .tabs_wrap {
     margin: 0 auto;
   }
 
-  .tabs-wrapper {
+  .tabs_wrap-2 {
     padding: 0 20px;
   }
 
@@ -2188,8 +2184,16 @@ input[type="file"] {
     padding: 15px;
   }
 
+  .tabs_wrap-2 .tabs__base-div {
+    color: #fff;
+  }
+
+  .tabs_wrap-2 .tabs__little-div {
+    color: $pink;
+  }
+
   .tabs_wrap-3 {
-    padding: 25px 10px;
+    padding: 25px 20px;
   }
 
   .slick-slider .slick-list {
@@ -2248,7 +2252,7 @@ input[type="file"] {
   }
 
   .form .form-right textarea {
-    width: 237px;
+    width: 282px;
   }
 
   .form-second__text {
@@ -2258,8 +2262,6 @@ input[type="file"] {
   .form__textarea {
     margin-bottom: 20px;
   }
-
-  
 
   .form-second,
   .lists__inner,
@@ -2489,34 +2491,32 @@ input[type="file"] {
     display: flex;
   }
 
-  .tabs__little {
-    margin-top: 20px;
-  }
-
   .tabs_wrap-2 .tabs__base-item {
     background-color: $pink;
     color: white;
     position: relative;
     padding: 13px 32px 14px;
+    display: flex;
+    justify-content: start;
   }
 
   .tabs__base-item:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 15px;
-    right: 20px;
+    right: 24px;
     background-image: url(../images/src/select-burger-open.svg);
     background-repeat: no-repeat;
     width: 17px;
     height: 13px;
   }
 
-  .tabs_wrap-3 .tabs__base{
+  .tabs_wrap-3 .tabs__base {
     background-color: #fff;
   }
 
   .tabs__base-item-3 {
-    padding: 14px 32px 14px;
+    padding: 13px 32px 14px;
     position: relative;
   }
 
@@ -2527,23 +2527,23 @@ input[type="file"] {
   .tabs__base-item-3 {
     color: $pink;
     position: relative;
+    display: flex;
+    justify-content: start;
   }
 
-  .tabs__base-div-3:after {
-    content: '';
+  .tabs__base-item-3:after {
+    content: "";
     position: absolute;
     top: 16px;
-    right: 14px;
+    right: 24px;
     background-image: url(../images/src/select-close-pink.png);
     background-repeat: no-repeat;
     width: 17px;
     height: 13px;
   }
 
-
   .tabs__base-item,
   .tabs__base-item-3 {
-    margin-bottom: 2px;
     margin-right: 0;
   }
 
@@ -2551,9 +2551,18 @@ input[type="file"] {
     margin-bottom: 2px;
   }
 
+  .tabs__base-div {
+    color: $pink;
+  }
+
   .tabs-wrapper .tabs_wrap {
+    padding: 0 20px;
     border: none;
     min-width: 100%;
+  }
+
+  .tabs-wrapper-2 .tabs_wrap {
+    padding: 0;
   }
 
   .tabs-wrapper .tab-ul {
@@ -2563,7 +2572,7 @@ input[type="file"] {
   }
 
   .tabs-wrapper .tab-ul--active {
-      display: flex;
+    display: flex;
     //   background-color: #212121;
     //   color: #fff;
   }
@@ -2586,17 +2595,17 @@ input[type="file"] {
   }
 
   .first-tab:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 16px;
     right: 20px;
-    background-image: url('../images/src/select-burger-open.svg');
+    background-image: url("../images/src/select-burger-open.svg");
     background-repeat: no-repeat;
     width: 17px;
     height: 13px;
   }
-  .close-select.first-tab:after{
-      background-image: url('../images/src/select-close-button.png');
+  .close-select.first-tab:after {
+    background-image: url("../images/src/select-close-button.png");
   }
   .tabs-wrapper .tab {
     padding: 12px 32px 12px;
@@ -2608,7 +2617,7 @@ input[type="file"] {
     background-color: $pink;
     color: white;
   }
-  .tabs-wrapper-2 .default-tab{
+  .tabs-wrapper-2 .default-tab {
     border: 2px solid white;
     border-radius: 0;
     background-color: transparent;
@@ -2626,14 +2635,15 @@ input[type="file"] {
   .tabs-wrapper .tab-ul {
     width: 100%;
   }
-  .alerts__right, .alerts__wrong {
+  .alerts__right,
+  .alerts__wrong {
     max-width: 100%;
   }
   .buttons__inner .buttons-1,
   .buttons__inner .buttons-2,
   .buttons__inner .buttons-3,
   .buttons__inner .buttons-4,
-  .buttons__inner .buttons-5, 
+  .buttons__inner .buttons-5,
   .buttons__inner .buttons-6 {
     width: 100%;
   }
@@ -2651,13 +2661,18 @@ input[type="file"] {
   .form__wrapper .buttons-3 {
     max-width: 250px;
   }
-  .lists__bullet, .lists__numbered {
+  .lists__bullet,
+  .lists__numbered {
     margin-right: 0;
     max-width: 100%;
   }
+
+  .tabs__little-item.active .tabs__little-div {
+    color: #fff;
+  }
 }
 
-@media(max-width: 560px) {
+@media (max-width: 560px) {
   .instagram__gallery-item:first-child,
   .instagram__gallery-item:nth-child(5) {
     display: none;
@@ -2824,7 +2839,9 @@ input[type="file"] {
     padding: 20px 0 22px 0;
   }
 
-  
+  .tabs__little {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 430px) {
@@ -2870,10 +2887,6 @@ input[type="file"] {
   .top__img-inner:before {
     opacity: 0;
     display: none;
-  }
-
-  .tabs__little {
-    flex-direction: column;
   }
 }
 
